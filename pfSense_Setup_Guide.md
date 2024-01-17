@@ -72,27 +72,67 @@ Click **OK** when done.
 
 ## Step 6: Configuring pfSense
 1. Upon reboot, when prompted to set up VLANs, select `n`.
+
+![pfsense-install10](https://github.com/mjohansona2/Home-Lab/assets/6199686/ffb900a1-7df0-497b-b0d0-587355be62e9)
+
 2. Specify interfaces for WAN, LAN, ISOLATED, and AD_LAB as prompted.
+
+![pfsense-install11](https://github.com/mjohansona2/Home-Lab/assets/6199686/7ff20490-98ff-4522-bc12-7fa4e6a87d70)
 
 ## Step 7: Configure Network Interfaces
 **LAN Configuration**:
-1. Select option 2 for LAN.
-2. Set a static IP address and subnet mask.
-3. Skip IPv6 settings.
-4. Enable DHCP server and set IP range.
-5. Choose `n` for TLS configuration.
+1. Select option 2 for Setting INterfaces IP addresses
+
+![pfsense-install16](https://github.com/mjohansona2/Home-Lab/assets/6199686/07d9d581-37ba-4653-92df-73e9c8f1c386)
+
+2. Select 2 for the LAN:
+
+![pfsense-install17](https://github.com/mjohansona2/Home-Lab/assets/6199686/2ac37c61-842c-489d-941a-7d400254f9c7)
+
+3. Set a static IP address and subnet mask.
+
+![pfsense-install18](https://github.com/mjohansona2/Home-Lab/assets/6199686/a000a23c-b5e6-4b03-b11e-38afe34f6e04)
+![pfsense-install19](https://github.com/mjohansona2/Home-Lab/assets/6199686/46504b25-8e0d-4e76-91cb-1a4009736808)
+![pfsense-install20](https://github.com/mjohansona2/Home-Lab/assets/6199686/e834f614-d19b-4c6e-8a5d-6868791a44f6)
+
+4. Press Enter for LAN:
+
+![pfsense-install21](https://github.com/mjohansona2/Home-Lab/assets/6199686/0fc5f2c2-4dc6-4459-baff-91a3ccad403f)
+
+5. Skip IPv6 settings.
+
+![pfsense-install22](https://github.com/mjohansona2/Home-Lab/assets/6199686/77da1cba-6137-4abe-8c34-ebf4bebbd025)
+![pfsense-install23](https://github.com/mjohansona2/Home-Lab/assets/6199686/853435ea-82a3-45b9-9277-7fa0dce62284)
+
+6. Enable DHCP server and set IP range.
+
+![pfsense-install24](https://github.com/mjohansona2/Home-Lab/assets/6199686/cf4364a0-85b3-4138-8516-29db84ffd2f2)
+
+7. Choose `n` for web configuration.
+
+![pfsense-install25](https://github.com/mjohansona2/Home-Lab/assets/6199686/cae88281-5c46-4091-80ca-f0b16a9df74b)
+
 
 **Isolated LAN Configuration**:
-Repeat the LAN configuration steps for the Isolated LAN (OPT3).
+Repeat the LAN configuration steps for the Isolated LAN (OPT1).
+
+![pfsense-install28](https://github.com/mjohansona2/Home-Lab/assets/6199686/8c012da4-883f-45c1-9d4e-c12b758811e2)
+![pfsense-install29](https://github.com/mjohansona2/Home-Lab/assets/6199686/9ad48893-40ec-4204-864d-ff25db6c3bd3)
+![pfsense-install30](https://github.com/mjohansona2/Home-Lab/assets/6199686/af764959-90d8-48c0-8ffb-86c6cae276b0)
+
+
 
 **AD_LAB LAN Configuration**:
-1. Configure OPT4 similarly, but disable the DHCP server as the domain controller will handle this role.
+Configure OPT2 similarly, but disable the DHCP server as the domain controller will handle this role.
+
+![pfsense-install24](https://github.com/mjohansona2/Home-Lab/assets/6199686/ebef864e-c87f-4303-b7dd-aee6a40478a1)
+![pfsense-install32](https://github.com/mjohansona2/Home-Lab/assets/6199686/68cec41d-31f6-45b7-8156-1d0ae6bf8154)
 
 ## Step 8: Final Check
 Verify the configuration settings in the VM.
 
-## Security Note
-Do not make the pfSense web console accessible from the WAN for security reasons. Use a secure VM like Kali for firewall rule configuration.
+![pfsense-install34](https://github.com/mjohansona2/Home-Lab/assets/6199686/1002b12c-c10e-4aaa-96f1-5e9815be1d4d)
+
 
 ## Next Step
 Proceed to import Kali from Offensive Security Images.
