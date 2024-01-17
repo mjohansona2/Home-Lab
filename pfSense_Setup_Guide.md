@@ -114,6 +114,7 @@ Click **OK** when done.
 
 
 **Isolated LAN Configuration**:
+
 Repeat the LAN configuration steps for the Isolated LAN (OPT1).
 
 ![pfsense-install28](https://github.com/mjohansona2/Home-Lab/assets/6199686/8c012da4-883f-45c1-9d4e-c12b758811e2)
@@ -123,9 +124,10 @@ Repeat the LAN configuration steps for the Isolated LAN (OPT1).
 
 
 **AD_LAB LAN Configuration**:
+
 Configure OPT2 similarly, but disable the DHCP server as the domain controller will handle this role.
 
-![pfsense-install24](https://github.com/mjohansona2/Home-Lab/assets/6199686/ebef864e-c87f-4303-b7dd-aee6a40478a1)
+![pfsense-install31](https://github.com/mjohansona2/Home-Lab/assets/6199686/11e20e7f-4f89-4ef1-bb6c-3fa5cf343916)
 ![pfsense-install32](https://github.com/mjohansona2/Home-Lab/assets/6199686/68cec41d-31f6-45b7-8156-1d0ae6bf8154)
 
 ## Step 8: Final Check
