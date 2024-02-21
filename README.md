@@ -22,10 +22,10 @@ The first and crucial step in building this lab is to set up the pfSense virtual
 ### Subsequent Steps
 After establishing the pfSense VM, the following steps will involve:
 
-- Configuring network interfaces and rules in pfSense.
-- Setting up the Kali Linux VM with necessary tools and configurations.
-- Importing and configuring VulnHub VMs for penetration testing practice.
-- Installing and setting up Metasploitable for additional security testing scenarios.
+- ~~Configuring network interfaces and rules in pfSense.~~
+- ~~Setting up the Kali Linux VM with necessary tools and configurations.~~
+- ~~Importing and configuring VulnHub VMs for penetration testing practice.~~
+- ~~Installing and setting up Metasploitable for additional security testing scenarios.~~
 - Creating and configuring an Active Directory environment for advanced network and security practice.
 
 ## Conclusion
