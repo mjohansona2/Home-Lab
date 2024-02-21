@@ -20,17 +20,30 @@ This guide provides detailed instructions on how to download and set up two popu
    - Open VirtualBox.
    - Click on the "New" button to start the VM creation wizard.
 
+   ![metasploit1](https://github.com/mjohansona2/Home-Lab/assets/6199686/578c934f-ea82-4339-a196-8e862cb3ca10)
+
 2. **Add the Downloaded Disk:**
    - Click on the "Add disk" icon.
+
+   ![metasploit3](https://github.com/mjohansona2/Home-Lab/assets/6199686/bd80a95e-2344-4297-b7e5-6ca30bb2e963)
+
    - Navigate to the folder where you unzipped Metasploitable2.
    - Open the folder, select the `.vmdk` file, and choose "Select".
+
+   ![metasploit4](https://github.com/mjohansona2/Home-Lab/assets/6199686/df226218-34c3-445c-8213-f1869a46fce9)
+
    - Click "Next" and follow through the wizard until you can click "Finish".
+
+   ![metasploit5](https://github.com/mjohansona2/Home-Lab/assets/6199686/b68da0c5-40af-4c23-87de-85fc6029b738)
+
 
 ### Important Note
 
 - **Do Not Start the VM Yet:**
   - Right-click the newly created Metasploitable2 VM in VirtualBox and choose "Settings".
   - Navigate to the "Network" settings to ensure everything is configured correctly before starting the VM.
+
+   ![metasploit6](https://github.com/mjohansona2/Home-Lab/assets/6199686/af480189-24f2-4bb0-abf1-971db77bd2c3)
 
 ### First Boot and Network Configuration
 
@@ -46,6 +59,9 @@ This guide provides detailed instructions on how to download and set up two popu
 1. **Ping Tests:**
    - Perform ping tests from Metasploitable2 to Kali Linux using the IP address and local DNS suffix.
    - Try pinging `google.com` from Metasploitable2 to confirm external connectivity is blocked as expected.
+
+   ![metasploit8](https://github.com/mjohansona2/Home-Lab/assets/6199686/0150ee18-7e57-43cb-a279-43c54abe5f62)
+
    - From Kali Linux, ping Metasploitable2 to ensure network connectivity is established.
 
 ### Final Steps
@@ -73,6 +89,8 @@ This guide provides detailed instructions on how to download and set up two popu
    - Adjust the MAC address policy as needed.
    - Click "Finish" to complete the import.
 
+   ![mrrobot1](https://github.com/mjohansona2/Home-Lab/assets/6199686/1391c515-09f2-41b8-9aa3-c8671c9d653d)
+
 ### VM Configuration
 
 1. **Adjust Settings:**
@@ -80,11 +98,12 @@ This guide provides detailed instructions on how to download and set up two popu
 
 2. **Network Configuration:**
    - Add the VM to an isolated network to ensure secure testing environment.
+
+   ![mrrobot2](https://github.com/mjohansona2/Home-Lab/assets/6199686/e9c42073-27d0-437c-a452-f063f65f5ee5)
+
    - Confirm the VM obtains an IP address from pfSense in the Isolated LAN, assuming your firewall is configured correctly to allow routing from Kali to this LAN.
 
 ### Final Steps
 
 - **Snapshot:**
   - Similar to Metasploitable2, once Mr. Robot VM is successfully booted and network configuration is verified, power it off and take a snapshot. This precaution ensures you can easily revert to a stable state if any issues arise during penetration testing.
-
-
